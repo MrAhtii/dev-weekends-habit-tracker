@@ -1,0 +1,256 @@
+:root {
+  --primary: #b30b0b;
+  --bg: linear-gradient(to right, #8b0000, #b22222);
+  --today-highlight: #ff3f3f49;
+  --text: #1e293b;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  margin: 0;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 900px;
+  background: #f8f9fa;;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  transition: all 0.3s ease;
+}
+#addHabitBtn {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(99, 102, 241, 0.3);
+}
+
+#addHabitBtn:hover {
+    background-color: #b30b0b;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px rgba(173, 3, 3, 0.4);
+}
+
+#addHabitBtn:active {
+  transform: translateY(0);
+}
+.week-controls button {
+  background-color: white;
+  color: var(--text);
+  border: 1px solid #e2e8f0;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.week-controls button:hover {
+  background-color: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+.week-controls button:active {
+  background-color: #f1f5f9;
+}
+
+#todayBtn {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+#todayBtn:hover {
+  background-color: var(--today-highlight);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px repeat(7, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.grid-header {
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #b30b0b;
+}
+
+.grid-cell {
+  padding: 10px;
+  text-align: center;
+}
+
+.grid-col-today {
+  background-color: var(--today-highlight);
+  border-radius: 6px;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #ff2626;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: all 0.2s;
+}
+
+.checkbox.checked {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #94a3b8;
+  grid-column: 1 / -1;
+}
+
+.habit-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: #ffe5e5;
+  border-radius: 8px;
+  position: relative;
+}
+
+.habit-name {
+  font-weight: 600;
+  flex-grow: 1;
+}
+
+.streak-badge {
+  font-size: 12px;
+  background: #fff7ed;
+  color: #ea580c;
+  padding: 2px 6px;
+  border-radius: 10px;
+  border: 1px solid #fdba74;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: #eba164;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.delete-btn:hover {
+  color: #ef4444;
+}
+.rename-btn {
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 4px;
+  opacity: 0.5;
+  transition: opacity 0.2s;
+}
+
+.rename-btn:hover {
+  opacity: 1;
+}
+
+.habit-name {
+  cursor: pointer;
+}
+
+.habit-name:hover {
+  text-decoration: underline;
+}
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: var(--primary);
+}
+
+.add-habit-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+  margin: 0 auto 25px auto;
+  background: white;
+  border: 2px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+.add-habit-container:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(146, 4, 4, 0.123);
+}
+
+#newHabitInput {
+  flex-grow: 1;
+  padding: 14px 18px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  background: transparent;
+}
+
+#addHabitBtn {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 12px;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#addHabitBtn:hover {
+  background: var(--primary-hover);
+  border-radius: 14px;
+}
+.week-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.date-display {
+  margin-left: 15px;
+  font-weight: 600;
+  color: #64748b;
+  min-width: 180px;
+}

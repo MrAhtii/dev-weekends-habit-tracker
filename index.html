@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Habit Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h1>Habit Tracker</h1>
+            
+            <div class="add-habit-container">
+                <input type="text" id="newHabitInput" placeholder="New habit (e.g., Drink water)">
+                <button id="addHabitBtn">+</button>
+            </div>
+
+            <div class="week-controls">
+                <button id="prevWeek">← Prev</button>
+                <button id="todayBtn">Today</button>
+                <button id="nextWeek">Next →</button>
+                <div id="currentWeekLabel" class="date-display"></div>
+            </div>
+        </header>
+
+        <div id="habitGrid" class="grid-container">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
