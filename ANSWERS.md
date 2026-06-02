@@ -2,7 +2,7 @@
 
 ### 1. How to Run
 * **Local Setup:** To run this project locally, you don't need to install any complex dependencies. Simply clone the repository, navigate to the root directory, and open the `index.html` file directly in any modern web browser. Alternatively, you can use an extension like VS Code's "Live Server" to host it locally.
-* **Deployment URL:** [If you deployed it to GitHub Pages, Vercel, or Netlify, paste the live website link here. If not, delete this line.]
+* **Deployment URL:** [https://mrahtii.github.io/dev-weekends-habit-tracker/]
 
 ---
 
