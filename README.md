@@ -2,7 +2,7 @@
 
 ### 1. How to Run
 * **Local Setup:** This project is built using native browser technologies. Download or clone this repository, navigate into the root directory, and open `index.html` directly in any modern web browser. No installation or build steps are required.
-* **Deployment URL:** [Paste your live link here if you uploaded it to GitHub Pages/Vercel/Netlify; otherwise, delete this line]
+* **Deployment URL:** [https://mrahtii.github.io/dev-weekends-habit-tracker/]
 
 ---
 
